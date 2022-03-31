@@ -22,7 +22,7 @@ Header.defaultProps = {
 };
 
 Header.propTypes = {
-    text: PropTypes.string,
+    text: PropTypes.string.isRequired,
 };
 
 export default Header;
