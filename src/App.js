@@ -2,6 +2,8 @@ import Header from "./components/Header";
 import FeedbackData from "./data/FeedbackData";
 import FeedbackList from "./components/FeedbackList";
 import Card from "./components/shared/Card";
+import FeedbackStats from "./components/FeedbackStats";
+import FeedbackForm from "./components/FeedbackForm";
 import { useState } from "react";
 
 function App() {
@@ -15,6 +17,8 @@ function App() {
     <>
       <Header text="Feedback UI" />
       <div className="container">
+        <FeedbackForm></FeedbackForm>
+        <FeedbackStats feedback={feedback}></FeedbackStats>
         <FeedbackList
           feedback={feedback}
           handleDelete={deleteFeedback}
