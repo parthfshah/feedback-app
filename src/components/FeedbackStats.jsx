@@ -5,6 +5,7 @@ function FeedbackStats() {
 
   const {feedback} = useContext(FeedbackContext)
 
+
   let average = feedback.reduce((acc, current) => {
     return acc+current.rating
   }, 0) / feedback.length;
