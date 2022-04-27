@@ -1,30 +1,23 @@
-
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import Header from "./components/Header";
 import FeedbackData from "./data/FeedbackData";
 import FeedbackList from "./components/FeedbackList";
-import Card from "./components/shared/Card";
 import FeedbackStats from "./components/FeedbackStats";
 import FeedbackForm from "./components/FeedbackForm";
 import AboutIconLink from "./components/AboutIconLink";
 import AboutPage from "./pages/AboutPage";
 import { FeedbackProvider } from "./context/FeedbackContext";
-import { useState } from "react";
 
 function App() {
-  const [feedback, setFeedback] = useState(FeedbackData);
-  
-
- 
   return (
     <FeedbackProvider>
       <Router>
         <Header text="Feedback UI" />
         <div className="container">
           <Route exact path="/">
-            <FeedbackForm/>
-            <FeedbackStats/>
-            <FeedbackList/>
+            <FeedbackForm />
+            <FeedbackStats />
+            <FeedbackList />
           </Route>
           <Route path="/about" component={AboutPage} />
           <AboutIconLink />
