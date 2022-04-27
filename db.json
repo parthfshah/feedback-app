@@ -1,11 +1,6 @@
 {
   "feedback": [
     {
-      "text": "This is again updated",
-      "rating": 10,
-      "id": 1
-    },
-    {
       "id": 2,
       "rating": 8,
       "text": "This is feedback item 2 coming from the backend"
